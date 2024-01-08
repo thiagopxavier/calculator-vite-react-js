@@ -26,7 +26,7 @@ function App() {
         <button className="button-calculator">1</button>
         <button className="button-calculator">2</button>
         <button className="button-calculator">3</button>
-        <button id="button-placeholder">fake</button>
+        <button className="button-calculator" id="button-placeholder">fake</button>
         <button className="button-calculator">0</button>
         <button className="button-calculator">.</button>
         <button className="button-calculator">+/-</button>
