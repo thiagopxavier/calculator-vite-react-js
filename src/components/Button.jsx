@@ -10,14 +10,14 @@ function Button({ handleNum, handleFunc }) {
 
   const verifyId = (button) => {
     switch (button) {
-    case 'AC':
-      return 'button-ac';
-    case 'fake':
-      return 'button-placeholder';
-    case '=':
-      return 'button-equal';
-    default:
-      break;
+      case 'AC':
+        return 'button-ac';
+      case 'fake':
+        return 'button-placeholder';
+      case '=':
+        return 'button-equal';
+      default:
+        break;
     }
   };
 
@@ -25,11 +25,11 @@ function Button({ handleNum, handleFunc }) {
     <>
       {buttons.map((button, index) => (
         <button
-          key={ index }
+          key={index}
           className="button-calculator"
-          id={ verifyId(button) }
-          value={ button }
-          onClick={ Number(button) || button === '0' ? handleNum : handleFunc }
+          id={verifyId(button)}
+          value={button}
+          onClick={Number(button) || button === '0' ? handleNum : handleFunc}
         >
           {button}
         </button>
